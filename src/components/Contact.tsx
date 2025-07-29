@@ -15,7 +15,7 @@ const Contact = () => {
             <span className="bg-gradient-primary bg-clip-text text-transparent ml-4">Amazing</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Ready to turn data into actionable insights? Let's discuss your next project.
+            Ready to turn data into actionable insights? Let's discuss your next project with Muhammad Asfand Khan.
           </p>
         </div>
 
@@ -26,7 +26,7 @@ const Contact = () => {
               <CardHeader>
                 <CardTitle className="text-2xl font-bold">Get In Touch</CardTitle>
                 <p className="text-muted-foreground">
-                  I'm always open to discussing new opportunities and innovative data science projects.
+                  I'm Muhammad Asfand Khan, and I'm always open to discussing new opportunities and innovative data science projects.
                 </p>
               </CardHeader>
               <CardContent className="space-y-6">

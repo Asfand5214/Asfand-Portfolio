@@ -14,10 +14,14 @@ const Hero = () => {
           </Badge>
           
           <h1 className="text-5xl lg:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-            Data-Driven
-            <br />
-            <span className="text-foreground">Innovation</span>
+            Muhammad Asfand Khan
           </h1>
+          
+          <div className="mb-6">
+            <h2 className="text-3xl lg:text-4xl font-semibold text-foreground mb-4">
+              Data-Driven Innovation
+            </h2>
+          </div>
           
           <p className="text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
             Experienced data scientist specializing in leveraging data-driven insights for effective 

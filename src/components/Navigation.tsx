@@ -20,11 +20,11 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">DS</span>
+              <span className="text-primary-foreground font-bold text-sm">AK</span>
             </div>
             <div>
-              <span className="font-semibold text-foreground">Data Scientist</span>
-              <Badge variant="outline" className="ml-2 text-xs">Portfolio</Badge>
+              <span className="font-semibold text-foreground">Muhammad Asfand Khan</span>
+              <Badge variant="outline" className="ml-2 text-xs">Data Scientist</Badge>
             </div>
           </div>
 
