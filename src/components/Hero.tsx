@@ -4,57 +4,50 @@ import { ArrowDown, Github, Linkedin, Mail, FileText } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-hero relative overflow-hidden">
-      <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
-      
-      <div className="container mx-auto px-6 text-center relative z-10">
-        <div className="animate-fade-in">
-          <Badge variant="outline" className="mb-6 text-sm font-medium border-primary/20 bg-primary/5">
-            Data Scientist & Engineer
-          </Badge>
-          
-          <h1 className="text-5xl lg:text-7xl font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-            Muhammad Asfand Khan
-          </h1>
-          
-          <div className="mb-6">
-            <h2 className="text-3xl lg:text-4xl font-semibold text-foreground mb-4">
-              Data-Driven Innovation
-            </h2>
+    <section className="min-h-screen flex items-center justify-center relative">
+      <div className="container mx-auto px-6 text-center relative z-10 max-w-4xl">
+        <div className="animate-fade-in space-y-8">
+          <div className="space-y-2">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-light tracking-tight text-foreground">
+              Muhammad Asfand Khan
+            </h1>
+            <p className="text-lg text-muted-foreground font-light">
+              Data Scientist & Engineer
+            </p>
           </div>
           
-          <p className="text-xl lg:text-2xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed">
-            Experienced data scientist specializing in leveraging data-driven insights for effective 
-            decision-making and problem-solving. Building predictive models that drive efficiency 
-            and innovation across diverse industries.
+          <p className="text-base lg:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed font-light">
+            Transforming complex data into actionable insights through machine learning 
+            and statistical analysis. Focused on building solutions that drive 
+            meaningful business outcomes.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-            <Button size="lg" className="shadow-glow hover:shadow-elegant transition-all duration-300">
-              <Mail className="mr-2 h-5 w-5" />
-              Get In Touch
+          <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-4">
+            <Button size="lg" className="min-w-32">
+              <Mail className="mr-2 h-4 w-4" />
+              Contact
             </Button>
-            <Button variant="outline" size="lg" className="group">
-              <FileText className="mr-2 h-5 w-5 group-hover:animate-float" />
-              Download Resume
+            <Button variant="outline" size="lg" className="min-w-32">
+              <FileText className="mr-2 h-4 w-4" />
+              Resume
             </Button>
           </div>
           
-          <div className="flex justify-center gap-6 mb-16">
-            <Button variant="ghost" size="icon" className="hover:scale-110 transition-transform">
-              <Github className="h-5 w-5" />
+          <div className="flex justify-center gap-4 pt-8">
+            <Button variant="ghost" size="icon" className="h-9 w-9">
+              <Github className="h-4 w-4" />
             </Button>
-            <Button variant="ghost" size="icon" className="hover:scale-110 transition-transform">
-              <Linkedin className="h-5 w-5" />
+            <Button variant="ghost" size="icon" className="h-9 w-9">
+              <Linkedin className="h-4 w-4" />
             </Button>
-            <Button variant="ghost" size="icon" className="hover:scale-110 transition-transform">
-              <Mail className="h-5 w-5" />
+            <Button variant="ghost" size="icon" className="h-9 w-9">
+              <Mail className="h-4 w-4" />
             </Button>
           </div>
         </div>
         
-        <div className="animate-float">
-          <ArrowDown className="h-6 w-6 mx-auto text-muted-foreground" />
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+          <ArrowDown className="h-5 w-5 text-muted-foreground opacity-60" />
         </div>
       </div>
     </section>

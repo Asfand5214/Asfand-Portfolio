@@ -15,32 +15,29 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-6">
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-14">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-sm">AK</span>
+            <div className="w-7 h-7 rounded-md bg-primary flex items-center justify-center">
+              <span className="text-primary-foreground font-medium text-xs">AK</span>
             </div>
-            <div>
-              <span className="font-semibold text-foreground">Muhammad Asfand Khan</span>
-              <Badge variant="outline" className="ml-2 text-xs">Data Scientist</Badge>
-            </div>
+            <span className="font-medium text-foreground text-sm">Muhammad Asfand Khan</span>
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <a
                 key={item.label}
                 href={item.href}
-                className="text-muted-foreground hover:text-primary transition-colors font-medium"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors font-light"
               >
                 {item.label}
               </a>
             ))}
-            <Button size="sm" className="ml-4">
-              Get In Touch
+            <Button size="sm" className="ml-2 text-xs">
+              Contact
             </Button>
           </div>
 

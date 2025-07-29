@@ -10,18 +10,18 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       <Hero />
-      <div id="experience">
+      <section id="experience" className="py-16 lg:py-24">
         <Experience />
-      </div>
-      <div id="projects">
+      </section>
+      <section id="projects" className="py-16 lg:py-24 bg-muted/30">
         <Projects />
-      </div>
-      <div id="skills">
+      </section>
+      <section id="skills" className="py-16 lg:py-24">
         <Skills />
-      </div>
-      <div id="contact">
+      </section>
+      <section id="contact" className="py-16 lg:py-24 bg-muted/30">
         <Contact />
-      </div>
+      </section>
     </div>
   );
 };
