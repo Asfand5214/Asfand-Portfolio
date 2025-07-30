@@ -7,7 +7,7 @@ const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { label: "About", href: "#about" },
+    { label: "About", href: "#top" },
     { label: "Experience", href: "#experience" },
     { label: "Projects", href: "#projects" },
     { label: "Skills", href: "#skills" },
@@ -34,7 +34,11 @@ const Navigation = () => {
                 className="text-sm text-muted-foreground hover:text-foreground transition-colors font-light cursor-pointer"
                 onClick={(e) => {
                   e.preventDefault();
-                  document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' });
+                  if (item.href === "#top") {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  } else {
+                    document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' });
+                  }
                 }}
               >
                 {item.label}
@@ -72,7 +76,11 @@ const Navigation = () => {
                 onClick={(e) => {
                   e.preventDefault();
                   setIsOpen(false);
-                  document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' });
+                  if (item.href === "#top") {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  } else {
+                    document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' });
+                  }
                 }}
               >
                 {item.label}
