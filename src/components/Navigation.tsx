@@ -31,13 +31,22 @@ const Navigation = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="text-sm text-muted-foreground hover:text-foreground transition-colors font-light"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors font-light cursor-pointer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' });
+                }}
               >
                 {item.label}
               </a>
             ))}
-            <Button size="sm" className="ml-2 text-xs">
-              Contact
+            <Button size="sm" className="ml-2 text-xs" asChild>
+              <a href="#contact" onClick={(e) => {
+                e.preventDefault();
+                document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
+              }}>
+                Contact
+              </a>
             </Button>
           </div>
 
@@ -59,14 +68,24 @@ const Navigation = () => {
               <a
                 key={item.label}
                 href={item.href}
-                className="block text-muted-foreground hover:text-primary transition-colors font-medium py-2"
-                onClick={() => setIsOpen(false)}
+                className="block text-muted-foreground hover:text-primary transition-colors font-medium py-2 cursor-pointer"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setIsOpen(false);
+                  document.querySelector(item.href)?.scrollIntoView({ behavior: 'smooth' });
+                }}
               >
                 {item.label}
               </a>
             ))}
-            <Button size="sm" className="w-full mt-4">
-              Get In Touch
+            <Button size="sm" className="w-full mt-4" asChild>
+              <a href="#contact" onClick={(e) => {
+                e.preventDefault();
+                setIsOpen(false);
+                document.querySelector('#contact')?.scrollIntoView({ behavior: 'smooth' });
+              }}>
+                Get In Touch
+              </a>
             </Button>
           </div>
         )}

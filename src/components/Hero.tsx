@@ -23,9 +23,11 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-4">
-            <Button size="lg" className="min-w-32">
-              <Mail className="mr-2 h-4 w-4" />
-              Contact
+            <Button size="lg" className="min-w-32" asChild>
+              <a href="#contact">
+                <Mail className="mr-2 h-4 w-4" />
+                Contact
+              </a>
             </Button>
             <Button variant="outline" size="lg" className="min-w-32">
               <FileText className="mr-2 h-4 w-4" />
@@ -34,14 +36,20 @@ const Hero = () => {
           </div>
           
           <div className="flex justify-center gap-4 pt-8">
-            <Button variant="ghost" size="icon" className="h-9 w-9">
-              <Github className="h-4 w-4" />
+            <Button variant="ghost" size="icon" className="h-9 w-9" asChild>
+              <a href="https://github.com/Asfand5214" target="_blank" rel="noopener noreferrer">
+                <Github className="h-4 w-4" />
+              </a>
             </Button>
-            <Button variant="ghost" size="icon" className="h-9 w-9">
-              <Linkedin className="h-4 w-4" />
+            <Button variant="ghost" size="icon" className="h-9 w-9" asChild>
+              <a href="https://www.linkedin.com/in/muhammad-asfand-khan-37523081" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="h-4 w-4" />
+              </a>
             </Button>
-            <Button variant="ghost" size="icon" className="h-9 w-9">
-              <Mail className="h-4 w-4" />
+            <Button variant="ghost" size="icon" className="h-9 w-9" asChild>
+              <a href="mailto:asfandkhan@yahoo.com">
+                <Mail className="h-4 w-4" />
+              </a>
             </Button>
           </div>
         </div>

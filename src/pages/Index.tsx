@@ -10,16 +10,16 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       <Hero />
-      <section id="experience" className="py-16 lg:py-24">
+      <section id="experience" className="py-12 lg:py-16 transition-all duration-700 ease-in-out">
         <Experience />
       </section>
-      <section id="projects" className="py-16 lg:py-24 bg-muted/30">
+      <section id="projects" className="py-12 lg:py-16 bg-muted/30 transition-all duration-700 ease-in-out">
         <Projects />
       </section>
-      <section id="skills" className="py-16 lg:py-24">
+      <section id="skills" className="py-12 lg:py-16 transition-all duration-700 ease-in-out">
         <Skills />
       </section>
-      <section id="contact" className="py-16 lg:py-24 bg-muted/30">
+      <section id="contact" className="py-12 lg:py-16 bg-muted/30 transition-all duration-700 ease-in-out">
         <Contact />
       </section>
     </div>
