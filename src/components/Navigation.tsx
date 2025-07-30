@@ -15,11 +15,11 @@ const Navigation = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border shadow-elegant">
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between h-14">
           <div className="flex items-center gap-3">
-            <div className="w-7 h-7 rounded-md bg-primary flex items-center justify-center">
+            <div className="w-7 h-7 rounded-md bg-gradient-primary flex items-center justify-center animate-pulse-glow">
               <span className="text-primary-foreground font-medium text-xs">AK</span>
             </div>
             <span className="font-medium text-foreground text-sm">Muhammad Asfand Khan</span>

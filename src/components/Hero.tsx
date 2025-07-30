@@ -4,7 +4,7 @@ import { ArrowDown, Github, Linkedin, Mail, FileText } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex items-center justify-center relative">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-glow">
       <div className="container mx-auto px-6 text-center relative z-10 max-w-4xl">
         <div className="animate-fade-in space-y-8">
           <div className="space-y-2">
@@ -54,7 +54,7 @@ const Hero = () => {
           </div>
         </div>
         
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-float">
           <ArrowDown className="h-5 w-5 text-muted-foreground opacity-60" />
         </div>
       </div>

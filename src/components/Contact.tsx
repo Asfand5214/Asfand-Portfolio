@@ -36,7 +36,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-medium text-foreground">Email</p>
-                    <p className="text-muted-foreground">your.email@example.com</p>
+                    <p className="text-muted-foreground">asfandkhan@yahoo.com</p>
                   </div>
                 </div>
 
@@ -62,17 +62,23 @@ const Contact = () => {
 
                 <div className="pt-6 border-t border-border">
                   <p className="text-sm text-muted-foreground mb-4">Connect with me on</p>
-                  <div className="flex gap-3">
-                    <Button variant="outline" size="icon" className="hover:bg-gradient-primary hover:text-primary-foreground hover:border-primary transition-all">
-                      <Github className="h-4 w-4" />
-                    </Button>
-                    <Button variant="outline" size="icon" className="hover:bg-gradient-primary hover:text-primary-foreground hover:border-primary transition-all">
-                      <Linkedin className="h-4 w-4" />
-                    </Button>
-                    <Button variant="outline" size="icon" className="hover:bg-gradient-primary hover:text-primary-foreground hover:border-primary transition-all">
-                      <Mail className="h-4 w-4" />
-                    </Button>
-                  </div>
+                   <div className="flex gap-3">
+                     <Button variant="outline" size="icon" className="hover:bg-gradient-primary hover:text-primary-foreground hover:border-primary transition-all" asChild>
+                       <a href="https://github.com/Asfand5214" target="_blank" rel="noopener noreferrer">
+                         <Github className="h-4 w-4" />
+                       </a>
+                     </Button>
+                     <Button variant="outline" size="icon" className="hover:bg-gradient-primary hover:text-primary-foreground hover:border-primary transition-all" asChild>
+                       <a href="https://www.linkedin.com/in/muhammad-asfand-khan-37523081" target="_blank" rel="noopener noreferrer">
+                         <Linkedin className="h-4 w-4" />
+                       </a>
+                     </Button>
+                     <Button variant="outline" size="icon" className="hover:bg-gradient-primary hover:text-primary-foreground hover:border-primary transition-all" asChild>
+                       <a href="mailto:asfandkhan@yahoo.com">
+                         <Mail className="h-4 w-4" />
+                       </a>
+                     </Button>
+                   </div>
                 </div>
               </CardContent>
             </Card>
@@ -88,13 +94,16 @@ const Contact = () => {
                   <p className="mb-6 opacity-90">
                     Let's discuss how data science can transform your business goals into reality.
                   </p>
-                  <Button 
-                    size="lg" 
-                    variant="secondary"
-                    className="bg-white text-primary hover:bg-white/90"
-                  >
-                    Send Message
-                  </Button>
+                   <Button 
+                     size="lg" 
+                     variant="secondary"
+                     className="bg-white text-primary hover:bg-white/90"
+                     asChild
+                   >
+                     <a href="mailto:asfandkhan@yahoo.com">
+                       Send Message
+                     </a>
+                   </Button>
                 </CardContent>
               </Card>
 
