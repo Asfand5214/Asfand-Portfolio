@@ -23,12 +23,6 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-4">
-            <Button size="lg" className="min-w-32" asChild>
-              <a href="#contact">
-                <Mail className="mr-2 h-4 w-4" />
-                Contact
-              </a>
-            </Button>
             <Button variant="outline" size="lg" className="min-w-32">
               <FileText className="mr-2 h-4 w-4" />
               Resume
