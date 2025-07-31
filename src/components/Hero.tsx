@@ -23,11 +23,18 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-3 justify-center items-center pt-4">
-            <Button variant="outline" size="lg" className="min-w-32">
-              <FileText className="mr-2 h-4 w-4" />
-              Resume
-            </Button>
+            <a
+              href="/Muhammad%20Asfand%20Khan%20CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="outline" size="lg" className="min-w-32">
+                <FileText className="mr-2 h-4 w-4" />
+                Resume
+              </Button>
+            </a>
           </div>
+
           
           <div className="flex justify-center gap-4 pt-8">
             <Button variant="ghost" size="icon" className="h-9 w-9">
